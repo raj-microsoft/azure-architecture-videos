@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Azure architecture explainer videos</title>
+<meta name="description" content="Short, silent explainer videos of Azure Architecture Center diagrams, drawn with the official Azure icons.">
+<style>
+:root { --ink: #1b1b1f; --muted: #4a4f57; --line: #e3e5e8; --paper: #fbfbfa; --accent: #0067b8; color-scheme: light; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.55 "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif; }
+::selection { background: #cfe3f6; }
+main { max-width: 860px; margin: 0 auto; padding: 56px 24px 72px; }
+h1 { font: 600 clamp(1.6rem, 3.2vw, 2.1rem)/1.2 "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif; letter-spacing: -0.02em; margin: 0 0 12px; text-wrap: balance; }
+.lede { max-width: 62ch; color: var(--muted); margin: 0 0 8px; }
+.lede a, footer a { color: var(--accent); text-underline-offset: 3px; }
+h2 { font-size: 15px; font-weight: 600; margin: 44px 0 6px; }
+ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+li { display: grid; grid-template-columns: 1fr auto auto auto; align-items: baseline; gap: 4px 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+a { color: inherit; }
+a.t { text-decoration: none; }
+a.t:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.m { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+a.s { font-size: 14px; color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+footer { margin-top: 56px; font-size: 13px; color: var(--muted); }
+@media (max-width: 600px) { main { padding: 36px 18px 56px; } li { grid-template-columns: 1fr auto auto; } a.t { grid-column: 1 / -1; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Azure architecture explainer videos</h1>
+<p class="lede">25 short, silent videos that walk through Azure Architecture Center diagrams step by step, drawn with the official Azure icons. Each one has a pencil-sketch twin in the <a href="https://raj-microsoft.github.io/azure-landing-zone-sketch/">sketch gallery</a>, where the Video panel lets you switch between Sketch and Official.</p>
+<section><h2>Landing zone</h2><ul>
+<li><a class="t" href="official/azure-landing-zone.mp4">Azure landing zone (ALZ) - Hub &amp; Spoke</a><span class="m">26 s · 7 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=azure-landing-zone">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/">Article</a></li>
+</ul></section>
+<section><h2>Networking</h2><ul>
+<li><a class="t" href="official/massive-scale-azure-architecture.mp4">Massive-scale VWAN architecture design</a><span class="m">23 s · 6 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=massive-scale-azure-architecture">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/networking/architecture/massive-scale-azure-architecture">Article</a></li>
+<li><a class="t" href="official/hub-spoke-virtual-wan-architecture.mp4">Hub-spoke network topology with Azure Virtual WAN</a><span class="m">23 s · 5 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=hub-spoke-virtual-wan-architecture">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/networking/architecture/hub-spoke-virtual-wan-architecture">Article</a></li>
+</ul></section>
+<section><h2>Hybrid + multicloud</h2><ul>
+<li><a class="t" href="official/azure-local-baseline.mp4">Azure Local hyperconverged baseline reference architecture</a><span class="m">23 s · 6 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=azure-local-baseline">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/hybrid/azure-local-baseline">Article</a></li>
+<li><a class="t" href="official/azure-local-switchless.mp4">Azure Local hyperconverged storage switchless architecture</a><span class="m">23 s · 4 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=azure-local-switchless">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/hybrid/azure-local-switchless">Article</a></li>
+<li><a class="t" href="official/hybrid-considerations.mp4">Azure hybrid options</a><span class="m">23 s · 4 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=hybrid-considerations">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/guide/technology-choices/hybrid-considerations">Article</a></li>
+</ul></section>
+<section><h2>Containers + microservices</h2><ul>
+<li><a class="t" href="official/microservices-with-container-apps-dapr.mp4">Deploy microservices with Azure Container Apps and Dapr</a><span class="m">26 s · 7 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=microservices-with-container-apps-dapr">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/example-scenario/serverless/microservices-with-container-apps-dapr">Article</a></li>
+<li><a class="t" href="official/aks-baseline.mp4">Azure Kubernetes Service (AKS) baseline architecture for Azure Local</a><span class="m">23 s · 5 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=aks-baseline">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/example-scenario/hybrid/aks-baseline">Article</a></li>
+<li><a class="t" href="official/aks-hybrid-azure-local.mp4">AKS on Azure Local and AKS Edge Essentials with GitOps</a><span class="m">26 s · 7 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=aks-hybrid-azure-local">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/example-scenario/hybrid/aks-hybrid-azure-local">Article</a></li>
+</ul></section>
+<section><h2>Mainframe + migration</h2><ul>
+<li><a class="t" href="official/mainframe-replication-precisely-connect.mp4">Replicate mainframe data by using Precisely Connect</a><span class="m">26 s · 7 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=mainframe-replication-precisely-connect">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/example-scenario/mainframe/mainframe-replication-precisely-connect">Article</a></li>
+</ul></section>
+<section><h2>AI + machine learning</h2><ul>
+<li><a class="t" href="official/baseline-azure-machine-learning-inference.mp4">Baseline Azure Machine Learning inference reference architecture</a><span class="m">26 s · 7 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=baseline-azure-machine-learning-inference">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/ai-ml/architecture/baseline-azure-machine-learning-inference">Article</a></li>
+<li><a class="t" href="official/ai-inferencing-on-azure-iaas.mp4">AI inferencing with Silk virtual SAN</a><span class="m">26 s · 7 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=ai-inferencing-on-azure-iaas">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/ai-ml/architecture/ai-inferencing-on-azure-iaas">Article</a></li>
+<li><a class="t" href="official/extract-object-text.mp4">Extract text from objects using Power Automate and AI Builder</a><span class="m">22 s · 3 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=extract-object-text">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/example-scenario/ai/extract-object-text">Article</a></li>
+<li><a class="t" href="official/quantum-computing-integration-with-classical-apps.mp4">Quantum computing integration with classical apps</a><span class="m">23 s · 6 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=quantum-computing-integration-with-classical-apps">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/example-scenario/quantum/quantum-computing-integration-with-classical-apps">Article</a></li>
+<li><a class="t" href="official/build-deploy-custom-models.mp4">Build and deploy custom document processing models on Azure</a><span class="m">23 s · 4 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=build-deploy-custom-models">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/ai-ml/architecture/build-deploy-custom-models">Article</a></li>
+<li><a class="t" href="official/basic-microsoft-foundry-chat.mp4">Basic Microsoft Foundry chat reference architecture</a><span class="m">23 s · 6 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=basic-microsoft-foundry-chat">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/ai-ml/architecture/basic-microsoft-foundry-chat">Article</a></li>
+</ul></section>
+<section><h2>Databases + analytics</h2><ul>
+<li><a class="t" href="official/event-driven-cache-updates-azure-managed-redis-cosmos-db.mp4">Event-driven cache updates with Azure Managed Redis and Azure Cosmos DB</a><span class="m">23 s · 6 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=event-driven-cache-updates-azure-managed-redis-cosmos-db">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/databases/architecture/event-driven-cache-updates-azure-managed-redis-cosmos-db">Article</a></li>
+<li><a class="t" href="official/dataops-mdw.mp4">DataOps for the modern data warehouse</a><span class="m">23 s · 6 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=dataops-mdw">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/databases/architecture/dataops-mdw">Article</a></li>
+<li><a class="t" href="official/cache-aside-azure-managed-redis-postgresql.mp4">Cache-aside caching using Azure Managed Redis and Azure Database for PostgreSQL</a><span class="m">26 s · 7 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=cache-aside-azure-managed-redis-postgresql">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/databases/architecture/cache-aside-azure-managed-redis-postgresql">Article</a></li>
+</ul></section>
+<section><h2>Integration + DevOps</h2><ul>
+<li><a class="t" href="official/automated-api-deployments-apiops.mp4">Automate API Management configuration by using APIOps CLI</a><span class="m">23 s · 6 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=automated-api-deployments-apiops">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/example-scenario/devops/automated-api-deployments-apiops">Article</a></li>
+</ul></section>
+<section><h2>Web + apps</h2><ul>
+<li><a class="t" href="official/deploy-ibm-maximo-application-suite.mp4">Deploy IBM Maximo Application Suite on Azure</a><span class="m">26 s · 7 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=deploy-ibm-maximo-application-suite">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/example-scenario/apps/deploy-ibm-maximo-application-suite">Article</a></li>
+</ul></section>
+<section><h2>DevOps</h2><ul>
+<li><a class="t" href="official/manage-microsoft-365-tenant-configuration-microsoft365dsc-devops.mp4">Manage Microsoft 365 tenant configuration by using Microsoft365DSC and Azure DevOps</a><span class="m">26 s · 7 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=manage-microsoft-365-tenant-configuration-microsoft365dsc-devops">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/example-scenario/devops/manage-microsoft-365-tenant-configuration-microsoft365dsc-devops">Article</a></li>
+</ul></section>
+<section><h2>Web</h2><ul>
+<li><a class="t" href="official/app-service-environment-high-availability-deployment.mp4">High availability enterprise deployment that uses App Service Environment</a><span class="m">23 s · 6 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=app-service-environment-high-availability-deployment">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/web-apps/app-service-environment/architectures/app-service-environment-high-availability-deployment">Article</a></li>
+</ul></section>
+<section><h2>Databases</h2><ul>
+<li><a class="t" href="official/write-through-caching-azure-sql-managed-redis.mp4">Write-through caching with Azure Managed Redis and Azure SQL Database</a><span class="m">26 s · 7 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=write-through-caching-azure-sql-managed-redis">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/databases/architecture/write-through-caching-azure-sql-managed-redis">Article</a></li>
+</ul></section>
+<section><h2>SAP</h2><ul>
+<li><a class="t" href="official/run-sap-bw4hana-with-linux-virtual-machines.mp4">Run SAP BW/4HANA with Linux virtual machines on Azure</a><span class="m">23 s · 5 steps</span><a class="s" href="https://raj-microsoft.github.io/azure-landing-zone-sketch/?a=run-sap-bw4hana-with-linux-virtual-machines">Sketch</a><a class="s" href="https://learn.microsoft.com/azure/architecture/reference-architectures/sap/run-sap-bw4hana-with-linux-virtual-machines">Article</a></li>
+</ul></section>
+<footer>Redraws of diagrams from the <a href="https://learn.microsoft.com/azure/architecture/">Azure Architecture Center</a>. Each video links to its source article.</footer>
+</main>
+</body>
+</html>
